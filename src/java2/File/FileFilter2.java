@@ -85,6 +85,5 @@ public class FileFilter2 {
                 System.out.println(f);
             }
         }
-
     }
 }
