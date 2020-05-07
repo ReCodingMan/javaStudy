@@ -19,10 +19,14 @@ import java.io.Serializable;
  *      被 static 修饰的成员变量不能被序列化的，序列化的都是对象
  *
  *  transient关键字：瞬态关键字
- *
+ *      被 transient 修饰成员变量，不能被序列化
  */
 public class Person implements Serializable {
-    private String name;
+
+    private static final long serialVersionUID = 1L;
+
+    public String name;
+    //private static int age;
     private int age;
 
     public Person() {
