@@ -53,39 +53,15 @@ public class FileFilter {
     public static void getAllFile(File dir){
         //System.out.println(dir);//打印被遍历的目录结构
 
-        File[] files = dir.listFiles();
+        File[] files = dir.listFiles(new FileFilterImpl());
         for (File f : files){
             //判断是否文件夹
             if(f.isDirectory()){
                 //是一个文件夹，调用自己
                 getAllFile(f);
             }else{
-                //f是一个文件，直接打印
-                /**
-                 * 只要java结尾的文件
-                 * 1、把File对象f，转换字符串对象
-                 */
-                //String name = f.getName();//abc.java
-                //String path = f.getPath();//abc/abc.java
-                String s = f.toString();//abc/abc.java
-
-                s = s.toLowerCase();
-
-                //2、调用String类重的方法，endsWith判断字符串是否以.java结尾
-                boolean b = s.endsWith(".java");
-
-                //3、如果是，则输出
-                if(b){
-                    System.out.println(f);
-                }
-
-                //等同于上面那段
-                if(f.getName().toLowerCase().endsWith(".java")){
-                    System.out.println(f);
-                }
+                System.out.println(f);
             }
         }
     }
-
-
 }
