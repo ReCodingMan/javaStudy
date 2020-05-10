@@ -29,7 +29,7 @@ public class JDBCUtils {
 
             //获取src路径下的文件的方式 ---> ClassLoader 类加载器
             ClassLoader classLoader = JDBCUtils.class.getClassLoader();
-            URL res = classLoader.getResource("jdbc/util/jdbc.properties");
+            URL res = classLoader.getResource("jdbc.properties");
             String path = res.getPath();
             System.out.println(path);
 
