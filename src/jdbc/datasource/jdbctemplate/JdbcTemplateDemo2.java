@@ -23,7 +23,6 @@ public class JdbcTemplateDemo2 {
      */
     @Test
     public void test1() {
-
         //2、定义sql
         String sql = "update student set sex = 9 where id = 2";
         //3、执行sql
@@ -36,7 +35,6 @@ public class JdbcTemplateDemo2 {
      */
     @Test
     public void test2() {
-
         //2、定义sql
         String sql = "insert into student value (?, ?, ?)";
         //3、执行sql
@@ -49,7 +47,6 @@ public class JdbcTemplateDemo2 {
      */
     @Test
     public void test3() {
-
         //2、定义sql
         String sql = "select * from student where id = ?";
         //3、执行sql
@@ -62,7 +59,6 @@ public class JdbcTemplateDemo2 {
      */
     @Test
     public void test4() {
-
         //2、定义sql
         String sql = "select * from student";
         //3、执行sql
@@ -75,7 +71,6 @@ public class JdbcTemplateDemo2 {
      */
     @Test
     public void test5() {
-
         //2、定义sql
         String sql = "select * from emp";
         //3、执行sql
@@ -111,7 +106,6 @@ public class JdbcTemplateDemo2 {
      */
     @Test
     public void test5_2() {
-
         //2、定义sql
         String sql = "select * from emp";
         //3、执行sql
@@ -126,12 +120,10 @@ public class JdbcTemplateDemo2 {
      */
     @Test
     public void test6() {
-
         //2、定义sql
         String sql = "select count(id) from emp";
         //3、执行sql
         Long total = template.queryForObject(sql, Long.class);
         System.out.println(total);
-
     }
 }
