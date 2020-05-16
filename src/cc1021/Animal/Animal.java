@@ -5,7 +5,6 @@ public class Animal {
     private int age;
     protected int NUM = 10;
 
-
     public Animal(String name, int age) {
         this.name = name;
         this.age = age;
