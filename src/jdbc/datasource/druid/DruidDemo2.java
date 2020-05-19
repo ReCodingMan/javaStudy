@@ -38,9 +38,7 @@ public class DruidDemo2 {
             throwables.printStackTrace();
 
         } finally {
-
             JDBCUtils.close(pstmt, conn);
-
         }
     }
 }
