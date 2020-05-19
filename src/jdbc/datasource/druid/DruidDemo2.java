@@ -19,6 +19,7 @@ public class DruidDemo2 {
         PreparedStatement pstmt = null;
 
         try {
+
             //1、获取连接
             conn = JDBCUtils.getConnection();
             //2、定义sql
@@ -33,9 +34,13 @@ public class DruidDemo2 {
             System.out.println(count);
 
         } catch (SQLException throwables) {
+
             throwables.printStackTrace();
+
         } finally {
+
             JDBCUtils.close(pstmt, conn);
+
         }
     }
 }
