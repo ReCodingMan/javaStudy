@@ -34,9 +34,7 @@ public class DruidDemo2 {
             System.out.println(count);
 
         } catch (SQLException throwables) {
-
             throwables.printStackTrace();
-
         } finally {
             JDBCUtils.close(pstmt, conn);
         }
