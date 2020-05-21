@@ -90,6 +90,7 @@ public class Demo {
         Collections.sort(player03);
         Collections.sort(dipai);
 
+        //开始看牌
         lookPoker("A", poker, player01);
         lookPoker("B", poker, player02);
         lookPoker("C", poker, player03);
@@ -111,6 +112,6 @@ public class Demo {
             System.out.print(value + " ");
         }
 
-        System.out.println();
+        System.out.println();//换行
     }
 }
