@@ -93,4 +93,20 @@ public class Demo {
 
     }
 
+    /**
+     * 看牌
+     * @param name
+     * @param poker
+     * @param list
+     */
+    public static void lookPoker(String name, HashMap<Integer, String> poker, ArrayList<Integer> list){
+        System.out.print(name + ": ");
+
+        for (Integer key : list){
+            String value = poker.get(key);
+            System.out.print(value + " ");
+        }
+
+        System.out.println();
+    }
 }
