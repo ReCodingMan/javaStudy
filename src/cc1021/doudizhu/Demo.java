@@ -103,8 +103,9 @@ public class Demo {
      * @param list
      */
     public static void lookPoker(String name, HashMap<Integer, String> poker, ArrayList<Integer> list){
+        //直接输出名字
         System.out.print(name + ": ");
-
+        //循环获取牌
         for (Integer key : list){
             String value = poker.get(key);
             System.out.print(value + " ");
