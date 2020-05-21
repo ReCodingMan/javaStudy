@@ -90,7 +90,10 @@ public class Demo {
         Collections.sort(player03);
         Collections.sort(dipai);
 
-
+        lookPoker("A", poker, player01);
+        lookPoker("B", poker, player02);
+        lookPoker("C", poker, player03);
+        lookPoker("D", poker, dipai);
     }
 
     /**
